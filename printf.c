@@ -6,7 +6,7 @@
 /*   By: hufuster <hufuster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 16:44:45 by hufuster          #+#    #+#             */
-/*   Updated: 2024/01/18 14:33:44 by hufuster         ###   ########.fr       */
+/*   Updated: 2024/01/18 19:50:17 by hufuster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,6 @@ int	ft_printf(const char *str, ...)
 			count += ex_case(get_case((char *)str), (char **)&str, args);
 		}
 	}
+	va_end(args);
 	return (count);
 }

@@ -6,7 +6,7 @@
 #    By: hufuster <hufuster@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/18 14:50:39 by hufuster          #+#    #+#              #
-#    Updated: 2024/01/18 18:57:00 by hufuster         ###   ########.fr        #
+#    Updated: 2024/01/18 19:24:37 by hufuster         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,8 +44,9 @@ fclean: clean
 
 re: fclean all
 
-test: $(NAME) main.c
+test: $(NAME) FORCE
 	$(CC) main.c $(NAME) -o test
+	clear
 	./test
 
 %.o: %.c
