@@ -1,4 +1,6 @@
 *.c
 *.o
 *.a
+*.out
+settings.json
 .DS_STORE
