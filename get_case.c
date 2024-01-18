@@ -6,7 +6,7 @@
 /*   By: hufuster <hufuster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 14:31:55 by hufuster          #+#    #+#             */
-/*   Updated: 2024/01/18 17:38:56 by hufuster         ###   ########.fr       */
+/*   Updated: 2024/01/18 18:56:34 by hufuster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ int	(*get_case(char *str))(char **str, va_list args)
 		return (case_c);
 	else if (str[1] == 's')
 		return (case_s);
+	else if (str[1] == 'i')
+		return (case_i);
 	else if (str[1] == 'p')
 		return (case_p);
 	else if (str[1] == 'd')

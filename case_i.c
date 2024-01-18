@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   case_p.c                                           :+:      :+:    :+:   */
+/*   case_i.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hufuster <hufuster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/18 16:23:36 by hufuster          #+#    #+#             */
-/*   Updated: 2024/01/18 19:08:18 by hufuster         ###   ########.fr       */
+/*   Created: 2024/01/18 16:45:43 by hufuster          #+#    #+#             */
+/*   Updated: 2024/01/18 18:55:24 by hufuster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	case_p(char **str, va_list args)
+int	case_i(char **str, va_list args)
 {
-	void			*p;
-	unsigned long	n;
+	char	*s;
+	int		i;
 
-	p = va_arg(args, void *);
-	n = (unsigned long)p;
+	s = ft_itoa(va_arg(args, int));
+	i = print_chars(s, ft_strlen(s));
 	*str += 2;
-	print_chars("0x", 2);
-	return (print_base_u(n, "0123456789abcdef") + 2);
+	free(s);
+	return (i);
 }

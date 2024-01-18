@@ -6,7 +6,7 @@
 /*   By: hufuster <hufuster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 14:33:01 by hufuster          #+#    #+#             */
-/*   Updated: 2024/01/18 17:20:46 by hufuster         ###   ########.fr       */
+/*   Updated: 2024/01/18 18:46:02 by hufuster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,9 +53,12 @@ static char	*ft_itoa_unsigned(unsigned int n)
 int	case_u(char **str, va_list args)
 {
 	char	*s;
+	int		i;
 
 	s = ft_itoa_unsigned(va_arg(args, unsigned int));
 	*str += 2;
-	return (print_chars(s, ft_strlen(s)));
+	i = print_chars(s, ft_strlen(s));
+	free(s);
+	return (i);
 }
 

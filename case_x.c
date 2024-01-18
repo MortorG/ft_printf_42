@@ -6,7 +6,7 @@
 /*   By: hufuster <hufuster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 14:33:01 by hufuster          #+#    #+#             */
-/*   Updated: 2024/01/18 17:00:38 by hufuster         ###   ########.fr       */
+/*   Updated: 2024/01/18 19:10:01 by hufuster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 int	case_x(char **str, va_list args)
 {
-	va_arg(args, int);
 	*str += 2;
-	return (1);
+	return (print_base(va_arg(args, int), "0123456789abcdef"));
 }

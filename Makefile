@@ -6,7 +6,7 @@
 #    By: hufuster <hufuster@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/18 14:50:39 by hufuster          #+#    #+#              #
-#    Updated: 2024/01/18 17:34:54 by hufuster         ###   ########.fr        #
+#    Updated: 2024/01/18 18:57:00 by hufuster         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ AR=ar rcs
 
 SRC=printf.c printchars.c get_case.c ex_case.c case_c.c case_error.c \
 case_percent.c case_d.c case_p.c case_s.c case_u.c case_x.c case_xx.c \
-hex_funcs.c
+hex_funcs.c case_i.c
 OBJ=$(SRC:.c=.o)
 DEPENDS=$(SRC:.c=.d)
 
