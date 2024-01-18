@@ -3,3 +3,4 @@
 *.out
 .DS_Store
 test
+settings.json
