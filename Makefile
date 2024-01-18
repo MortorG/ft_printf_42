@@ -6,7 +6,7 @@
 #    By: hufuster <hufuster@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/18 14:50:39 by hufuster          #+#    #+#              #
-#    Updated: 2024/01/18 16:11:41 by hufuster         ###   ########.fr        #
+#    Updated: 2024/01/18 17:34:54 by hufuster         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,8 @@ RM=rm -f
 AR=ar rcs
 
 SRC=printf.c printchars.c get_case.c ex_case.c case_c.c case_error.c \
-case_percent.c
+case_percent.c case_d.c case_p.c case_s.c case_u.c case_x.c case_xx.c \
+hex_funcs.c
 OBJ=$(SRC:.c=.o)
 DEPENDS=$(SRC:.c=.d)
 
@@ -43,7 +44,7 @@ fclean: clean
 
 re: fclean all
 
-test: $(NAME)
+test: $(NAME) main.c
 	$(CC) main.c $(NAME) -o test
 	./test
 
