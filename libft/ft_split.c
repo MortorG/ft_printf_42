@@ -6,7 +6,7 @@
 /*   By: hufuster <hufuster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/07 13:06:21 by hugo              #+#    #+#             */
-/*   Updated: 2024/01/07 14:35:02 by hufuster         ###   ########.fr       */
+/*   Updated: 2024/01/11 17:46:50 by hufuster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,6 @@
 // NULL if the allocation fails.
 
 #include "libft.h"
-
-// 	Check for empty string first
-// 	While string has not ended
-//		Check for repeating separator
-//		Check if string has ended now
-//		Check for non separator characters
 
 static size_t	ft_countwords(char const *s, char c)
 {
@@ -55,11 +49,6 @@ static void	*ft_free_memory(char **arr, int i)
 	free(arr);
 	return (NULL);
 }
-
-//	Allocate memory for word array
-//	When found word in string, calculate lenght checking if its last word or not
-//	Allocate new word using substr, and if allocation fails, free all previous
-//	memory allocated and return NULL
 
 char	**ft_split(char const *s, char c)
 {

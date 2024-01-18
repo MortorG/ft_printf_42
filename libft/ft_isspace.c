@@ -6,11 +6,9 @@
 /*   By: hufuster <hufuster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/02 16:04:35 by hufuster          #+#    #+#             */
-/*   Updated: 2024/01/05 11:15:07 by hufuster         ###   ########.fr       */
+/*   Updated: 2024/01/11 15:37:59 by hufuster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isspace(int c)
 {

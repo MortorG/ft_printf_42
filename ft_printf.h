@@ -6,7 +6,7 @@
 /*   By: hufuster <hufuster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 16:43:54 by hufuster          #+#    #+#             */
-/*   Updated: 2024/01/18 14:35:13 by hufuster         ###   ########.fr       */
+/*   Updated: 2024/01/18 14:48:11 by hufuster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,12 @@ int	print_chars(char *str, size_t len);
 int	(*get_case(char *str))(char **str, va_list args);
 int	ex_case(int (*f)(char **str, va_list args), char **str, va_list args);
 int	case_c(char **str, va_list args);
+int	case_s(char **str, va_list args);
+int	case_p(char **str, va_list args);
+int	case_d(char **str, va_list args);
+int	case_u(char **str, va_list args);
+int	case_x(char **str, va_list args);
+int	case_X(char **str, va_list args);
+int	case_percent(char **str, va_list args);
 int	case_error(char **str, va_list args);
 #endif
