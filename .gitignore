@@ -2,5 +2,4 @@
 *.o
 *.a
 *.out
-.vscode/settings.json
 .DS_STORE
