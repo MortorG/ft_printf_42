@@ -6,7 +6,7 @@
 /*   By: hufuster <hufuster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 14:33:24 by hufuster          #+#    #+#             */
-/*   Updated: 2024/01/18 14:33:38 by hufuster         ###   ########.fr       */
+/*   Updated: 2024/01/18 15:05:15 by hufuster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 int case_error(char **str, va_list args)
 {
+	(void)args;
 	*str += 1;
 	return(0);
 }
